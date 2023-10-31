@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragment_Recycler">
+
+    <fragment
+        android:id="@+id/fragment_Recycler"
+        android:name="com.currency.app.Fragment_Recycler"
+        android:label="Fragment_Recycler" >
+        <action
+            android:id="@+id/action_fragment_Recycler_to_fragmentDetails"
+            app:destination="@id/fragmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetails"
+        android:name="com.currency.app.FragmentDetails"
+        android:label="FragmentDetails" />
+</navigation>
