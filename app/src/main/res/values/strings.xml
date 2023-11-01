@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Currency</string>
+    <string name="the_history">The history of currencies</string>
 </resources>

@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnClickListener
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -25,6 +26,9 @@ class Fragment_Recycler : Fragment() {
         val view = inflater.inflate(R.layout.recycler_fragment, container, false)
         val data = addDAta()
         initRecycler(view, data)
+        view.findViewById<Button>(R.id.quizButton).setOnClickListener{
+            findNavController().navigate(R.id.action_fragment_Recycler_to_fragmentQuiz)
+        }
         return view
     }
 

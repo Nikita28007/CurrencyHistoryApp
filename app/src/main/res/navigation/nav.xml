@@ -11,9 +11,16 @@
         <action
             android:id="@+id/action_fragment_Recycler_to_fragmentDetails"
             app:destination="@id/fragmentDetails" />
+        <action
+            android:id="@+id/action_fragment_Recycler_to_fragmentQuiz"
+            app:destination="@id/fragmentQuiz" />
     </fragment>
     <fragment
         android:id="@+id/fragmentDetails"
         android:name="com.currency.app.FragmentDetails"
         android:label="FragmentDetails" />
+    <fragment
+        android:id="@+id/fragmentQuiz"
+        android:name="com.currency.app.FragmentQuiz"
+        android:label="FragmentQuiz" />
 </navigation>
